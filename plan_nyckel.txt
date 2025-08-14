@@ -1,0 +1,110 @@
+OBS: Några av variablerna varierar minimalt mellan år. Läs "Documentation of The Planning Survey and Related Databases" av Elias Lindstenz (2025) för en appendix med formuleringarna som användes för varje års planenkät.
+
+OBS: Frågorna är inte identiska planenkätens frågor. Frågorna som är dokumenterade här är generealiserade så att de gäller alla år (t.ex. "detta år" istället för "1986").
+
+Genomgående variabler för planenkäten. Variabler gäller varje "företag" (företag eller division).
+Variablerna X1-X38 samt X60-X65 är avdelning I.
+Variablerna X39-X57 är avdelning II (produktion).
+  Variablerna X41-X48 berör produktionskapacitet.
+  Variablerna X49-X53 berör order och priser.
+  Variablerna X54-X57 berör lager och inköp.
+
+Klassmitter används för procentuella svar.
+För frågor med tre alternativ svaras i ordning -1, 0 eller 1.
+
+[X1] : Medeltal anställda personer i Sverige förra året
+[X2] : Medeltal anställda personer i Sverige detta år
+[X3] : Medeltal anställda personer i Sverige nästa år (plan)
+[X4] : Antal arbetade timmar (1000-tals) förra året
+[X5] : Antal arbetade timmar (1000-tals) detta år
+[X6] : Antal arbetade timmar (1000-tals) nästa år (plan)
+[X7] : Fakturering (exkl indir skatter), mkr till utlandet förra året
+[X8] : Fakturering (exkl indir skatter), mkr till utlandet detta år
+[X9] : Fakturering (exkl indir skatter), mkr till utlandet nästa år (plan)
+[X10] : Fakturering (exkl indir skatter), mkr till hemmamarknaden (inkl till dotterbolag) förra året     
+[X11] : Fakturering (exkl indir skatter), mkr till hemmamarknaden (inkl till dotterbolag) detta år       
+[X12] : Fakturering (exkl indir skatter), mkr till hemmamarknaden (inkl till dotterbolag) nästa år (plan)
+[X13] : Total fakturering (exkl indir skatter), mkr förra året
+[X14] : Total fakturering (exkl indir skatter), mkr detta år
+[X15] : Total fakturering (exkl indir skatter), mkr nästa år (plan)
+[X16] : Inköpskostnader av rå- och insatsvaror (exkl bränslen), mkr förra året
+[X17] : Inköpskostnader av rå- och insatsvaror (exkl bränslen), mkr detta år
+[X18] : Inköpskostnader av rå- och insatsvaror (exkl bränslen), mkr nästa år (plan)
+[X19] : Inköpskostnader av elenergi (inkl internleveranser), mkr förra året
+[X20] : Inköpskostnader av elenergi (inkl internleveranser), mkr detta år
+[X21] : Inköpskostnader av elenergi (inkl internleveranser), mkr nästa år (plan)
+[X22] : Inköpskostnader av bränslen (olja, koks, lutar, ved o dyl), mkr förra året
+[X23] : Inköpskostnader av bränslen (olja, koks, lutar, ved o dyl), mkr detta år
+[X24] : Inköpskostnader av bränslen (olja, koks, lutar, ved o dyl), mkr nästa år (plan)
+[X25] : Lönekostnader (inkl sociala avgifter), mkr förra året
+[X26] : Lönekostnader (inkl sociala avgifter), mkr detta år
+[X27] : Lönekostnader (inkl sociala avgifter), mkr nästa år (plan)
+[X28] : Övriga kostnader, mkr förra året
+[X29] : Övriga kostnader, mkr detta år
+[X30] : Bruttoinvesteringar byggnader och anläggningar, mkr förra året
+[X31] : Bruttoinvesteringar byggnader och anläggningar, mkr detta år
+[X32] : Bruttoinvesteringar byggnader och anläggningar, mkr nästa år (plan)
+[X33] : Bruttoinvesteringar maskiner och inventarier (inkl transportmedel), mkr förra året
+[X34] : Bruttoinvesteringar maskiner och inventarier (inkl transportmedel), mkr detta år
+[X35] : Bruttoinvesteringar maskiner och inventarier (inkl transportmedel), mkr nästa år (plan)
+[X36] : Totala bruttoinvesteringar, mkr förra året
+[X37] : Totala bruttoinvesteringar, mkr detta år
+[X38] : Totala bruttoinvesteringar, mkr nästa år (plan)
+[X39] : Produktionsvolymen beräknas detta år jämfört med förra året ha
+        öka mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, näml ca ......%,
+        blivit ung oförändrad □ +2.5% - -2.5%,
+        minskat mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, näml ca ......%
+[X40] : Produktionsovlymen planeras nästa år jämfört med detta år
+        öka mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, näml ca ......%,
+        blivit ung oförändrad □ +2.5% - -2.5%,
+        minskat mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, näml ca ......%
+[X41] : Hur mycket skulle produktionsvolymen detta år ha kunnat öka - jämfört med förra året - om efterfrågeunderlag och tillgång på arbetskraft funnits?
+        Den skulle ha kunnat öka med mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% näml ca ......%, □ inte alls (0 - +2.5%)
+[X42] : Hur mycket skulle produktionsvolymen detta år ha kunnat öka - jämfört med förra året - om efterfrågeunderlag funnits - men med den arbetsstyrka som företaget faktiskt haft anställd under året?
+        Den skulle ha kunnat öka med mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% näml ca ......%, □ inte alls (0 - +2.5%)
+[X43] : Hur mycket skulle arbetsstyrkan detta år ha behövt öka - jämfört med den företaget faktiskt haft anställd under året - för att uppnå full kapacitetsutnyttjande?
+        Den skulle ha behövt öka med mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% näml ca ......%, □ inte alls (0 - +2.5%)
+[X44] : Kunde detta års produktionsvolym ha uppnåtts med en mindre arbetsstyrka? Hur mycket skulle i så fall denna kunnat reduceras - jämfört med den företaget faktiskt haft anställd under året?
+        Den skulle ha kunnat reduceras med mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% näml ca ......%, □ inte alls (0 - +2.5%)
+[X45] : Hur mycket kan produktionsvolymen öka nästa år - jämfört med detta år - med nuvarande produktionskapacitet och redan beslutade kapacitetsökningar? (Efterfrågan och tillgång på arbetskraft antagas ej verka begränsande på produktionen.)
+        Den skulle kunna öka med mer än □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% näml ca ......%, □ inte alls (0 - +2.5%)
+[X46] : Hur hög är produktionsaktiviteten f n (1 kv detta år) i procent av praktiskt möjlig produktionsnivå?
+        □ 100%, □ 95-100%, □ 90-95%, □ 80-90%, □ under 80%, näml ca ......%
+[X47] : Hur lång tid bedöms åtgå - av tekniska och arbetsmarknadsmässiga skäl - för att höja denna andel till 100%?
+        Upp till □ 1 månad, □ 2 månader, □ 4 månader, □ 6 månader, □ mer än 6 månader näml ca ......
+[X48] : Hur stor sysselsättningsökning förutsätter detta?
+        □ 0%, □ upp till 2%, □ upp till 5%, □ mer än 5% näml ca ......%
+[X49] : Orderstocksvolymen var (den 31:a december detta år) - jämfört med motsvarande tidpunkt förra året:
+        Mer än □ 2.5% högre, □ 5% högre, □ 10% högre, □ 15% högre, □ 20% högre, näml ca ......%,
+        Ung lika stor □ dvs +2.5% - -2.5%,
+        Mer än □ 2.5% lägre, □ 5% lägre, □ 10% lägre, □ 15% lägre, □ 20% lägre, näml ca ......%
+[X50] : Orderstocken (den 31:a december detta år) täcker den planerade produktionen för nästa år ungefär:
+        Upp till □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ helt, □ ingen stock
+[X51] : Ordertäckningen för nästa år är:
+        □ större än normal, □ normal, □ mindre än normal
+[X52] : Försäljningspriset (i svenska kronor) på Era produkter i Sverige beräknas i genomsnitt nästa år jämfört med detta år
+       Öka upp till □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, mer än 20% näml ......%,
+       Bli ung oförändr □ ±0%,
+       Minska upp till □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, mer än 20% näml ......%
+[X53] : Försäljningspriset (i svenska kronor) på Era produkter i utlandet beräknas i genomsnitt nästa år jämfört med detta år
+       Öka upp till □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, mer än 20% näml ......%,
+       Bli ung oförändr □ ±0%,
+       Minska upp till □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, mer än 20% näml ......%
+[X54] : Hur stor andel utgjorde företagets rå- och insatsvarulager den 31:a december detta år av inköpen detta år (inkl bränslen)
+        Upp till □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ inga lager alls
+[X55] : Vad är en normal relation mellan rå- och insatsvarulager och inköp:
+        Upp till □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ inga lager alls
+[X56] : Hur stor andel utgjorde företagets färdigvarulager den 31:a december detta år av faktureringen detta år:
+        Upp till □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ inga lager alls
+[X57] : Vad är en normal relation mellan färdigvarlulager och fakturering:
+        Upp till □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ inga lager alls
+[X58] : Har andelen av värdet på inköpta rå- och insatsvaror (X16, X17, X18) som kom från utländska underleverantörer detta år
+        □ ökat, □ varit ung oförändr, □ minskat
+[X59] : Kommer den andel av planerat inköpsvärde på rå- och insatsvaror som köps av utländska underleverantörer nästa år att
+        □ öka, □ bli ung oförändr, □ minska
+[X60] : Fakturering (exkl indir skatter), mkr därav till utl dotterbolag förra året
+[X61] : Fakturering (exkl indir skatter), mkr därav till utl dotterbolag detta år
+[X62] : Fakturering (exkl indir skatter), mkr därav till utl dotterbolag nästa år (plan)
+[X63] : FoU-kostnader, mkr förra året
+[X64] : FoU-kostnader, mkr detta år
+[X65] : FoU-kostnader, mkr nästa år (plan)

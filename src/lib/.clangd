@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - -I/opt/homebrew/include  # For Apple Silicon Macs
+    - -I/opt/homebrew/include/QtCore
+    - -I/opt/homebrew/include/QtWidgets
+    - -I/opt/homebrew/include/QtCharts
+    - -I/opt/homebrew/include/QtGui
+    - -I/opt/homebrew/include/QtPrintSupport
+    - -F/opt/homebrew/lib  # For frameworks

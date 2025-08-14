@@ -1,0 +1,112 @@
+NOTE: This is an English translation of enkät_nyckel.txt, which holds the original Swedish formulations of the planning survey questions.
+
+NOTE: Some of the variables have minimal differences between years. Refer to "Documentation of The Planning Survey and Related Databases" by Elias Lindstenz (2025) for an appendix of the exact formulations used for each year of the planning survey.
+
+NOTE: The questions are not identical to the ones in the planning survey. The questions documented here are generalised so that they apply to all years (i.e. "this year" instead of "1986").
+
+All panel variables for the planning survey. Variables refer to each "firm" (firm or division).
+Variables X1-X38 and X60-X65 are section I.
+Variables X39-X57 are section II (production).
+  Variables X41-X48 are about production capacity.
+  Variables X49-X53 are about orders and prices.
+  Variables X54-X57 are about inventories and purchases (input).
+
+For questions with percents, the class midpoint is used.
+Questions with three alternatives are answered, in order, -1, 0, or 1.
+
+[X1] : Number of employees (Sweden) last year
+[X2] : Number of employees (Sweden) this year
+[X3] : Number of employees (Sweden) next year (plan)
+[X4] : Total manhours (thousands) last year
+[X5] : Total manhours (thousands) this year
+[X6] : Total manhours (thousands) next year (plan)
+[X7] : Sales abroad (excluding indirect taxes), million SEK last year
+[X8] : Sales abroad (excluding indirect taxes), million SEK this year
+[X9] : Sales abroad (excluding indirect taxes), million SEK next year (plan)
+[X10] : Domestic sales, including to affiliates (excluding indirect taxes), million SEK last year
+[X11] : Domestic sales, including to affiliates (excluding indirect taxes), million SEK this year
+[X12] : Domestic sales, including to affiliates (excluding indirect taxes), million SEK next year (plan)
+[X13] : Total sales (excluding indirect taxes), million SEK last year
+[X14] : Total sales (excluding indirect taxes), million SEK this year
+[X15] : Total sales (excluding indirect taxes), million SEK next year (plan)
+[X16] : Raw material and input goods purchases (excluding fuel), million SEK last year
+[X17] : Raw material and input goods purchases (excluding fuel), million SEK this year
+[X18] : Raw material and input goods purchases (excluding fuel), million SEK next year (plan)
+[X19] : Electrical energy costs (including internally generated), million SEK last year
+[X20] : Electrical energy costs (including internally generated), million SEK this year
+[X21] : Electrical energy costs (including internally generated), million SEK next year (plan)
+[X22] : Fuel costs (oil, coal, etc.), million SEK last year
+[X23] : Fuel costs (oil, coal, etc.), million SEK this year
+[X24] : Fuel costs (oil, coal, etc.), million SEK next year (plan)
+[X25] : Total wage bill (including social fees), million SEK last year
+[X26] : Total wage bill (including social fees), million SEK this year
+[X27] : Total wage bill (including social fees), million SEK next year (plan)
+[X28] : Other costs, million SEK last year
+[X29] : Other costs, million SEK this year
+[X30] : Gross investments building and plant (including air conditioning, sanitation, etc.), million SEK last year
+[X31] : Gross investments building and plant (including air conditioning, sanitation, etc.), million SEK this year
+[X32] : Gross investments building and plant (including air conditioning, sanitation, etc.), million SEK next year (plan)
+[X33] : Gross investments machinery and equipment (including transport equipment), million SEK last year
+[X34] : Gross investments machinery and equipment (including transport equipment), million SEK this year
+[X35] : Gross investments machinery and equipment (including transport equipment), million SEK next year (plan)
+[X36] : Total gross investments, million SEK last year
+[X37] : Total gross investments, million SEK this year
+[X38] : Total gross investments, million SEK next year (plan)
+[X39] : Production volume is estimated this year compared to last year to have
+        increased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, namely ca ......%,
+        been approximately unchanged □ +2.5% - -2.5%,
+        decreased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, namely ca ......%
+[X40] : Production volume is planned next year compared to this year
+        increased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, namely ca ......%,
+        been approximately unchanged □ +2.5% - -2.5%,
+        decreased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, namely ca ......%
+[X41] : By what percent could this year's production volume have increased - as compared with last year - assuming labor supply and product demand imposed no restraint?
+        It could have increased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% namely ca ......%, □ not at all (0 - +2.5%)
+[X42] : By what percent could this year's production volume have increased - as compared with last year - assuming product demand available but with the existing labor force?
+        It could have increased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% namely ca ......%, □ not at all (0 - +2.5%)
+[X43] : What percent increase in employment - using this year's actual employment as base - would have been required to reach full capacity?
+        It would have had to increase more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% namely ca ......%, □ not at all (0 - +2.5%)
+[X44] : Could this year's production level have been achieved with less employment? If so, by how much less compared with actual employment?
+        It could have been reduced more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% namely ca ......%, □ not at all (0 - +2.5%)
+[X45] : By what percent can this year's production volume increase - as compared with last year - given the already decided-upon capacity increases and with labor supply and product demand imposing no restraint?
+        It could have increased more than □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20% namely ca ......%, □ not at all (0 - +2.5%)
+[X46] : How high is production activity now (first quarter next year) as a percent of practically achievable capacity?
+        □ 100%, □ 95-100%, □ 90-95%, □ 80-90%, □ less than 80%, namely ca ......%
+[X47] : How many months would be required - for technical or labor market reasons - to increase capacity utilization to 100%?
+        Up to □ 1 month, □ 2 months, □ 4 months, □ 6 months, □ more than 6 months namely ca ......
+[X48] : How large an increase in employment would be required to reach full capacity utilization?
+        □ 0%, □ up to 2%, □ up to 5%, □ more than 5% namely ca ......%
+[X49] : Percent increase or decrease in total volume of orders (the 31st December this year) - as compared with this time last year.
+        More than □ 2.5% higher, □ 5% higher, □ 10% higher, □ 15% higher, □ 20% higher, namely ca ......%,
+        Been approximately unchanged □ +2.5% - -2.5%,
+        More than □ 2.5% lower, □ 5% lower, □ 10% lower, □ 15% lower, □ 20% lower, namely ca ......%
+[X50] : Percent of planned production (31st December next year) covered by existing orders (31st December this year).
+        Up to □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ completely, □ no orders
+[X51] : Order coverage next year is
+        □ greater than normal, □ normal, □ less than normal
+[X52] : Expected percent change in average product price in Sweden next year compared to this year.
+        Increase up to □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, more than 20% namely ......%,
+        Be approximately unchanged □ ±0%,
+        Decrease up to □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, more than 20% namely ......%
+[X53] : Expected percent change in average product price abroad next year compared to this year. 
+        Increase up to □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, more than 20% namely ......%,             
+        Be approximately unchanged □ ±0%,                                                           
+        Decrease up to □ 2.5%, □ 5%, □ 10%, □ 15%, □ 20%, more than 20% namely ......%              
+[X54] : Raw materials and input goods inventories (including fuels) the 31st December this year as a percent of purchases this year.
+        Up to □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ no inventory at all
+[X55] : Normal ratio of raw material and input goods inventories to purchases.
+        Up to □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ no inventory at all
+[X56] : Product inventories as of the 31st December this year as a percent of total sales this year.
+        Up to □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ no inventory at all
+[X57] : Normal ratio of product inventories to sales.
+        Up to □ 5%, □ 10%, □ 15%, □ 20%, □ 25%, □ 50%, □ 75%, □ 100%, □ no inventory at all
+[X58] : Has the share of value of purchased raw materials and input goods (X16, X17, X18) that came from foreign subcontractors this year
+        □ increased, □ been approximately unchanged, □ decreased
+[X59] : Will the share of the value of planned purchases of raw materials and input goods that is bought by foreign subcontractors next year
+        □ increase, □ be approximately unchanged, □ decrease
+[X60] : Sales to foreign subsidiaries (excluding indirect taxes), million SEK last year
+[X61] : Sales to foreign subsidiaries (excluding indirect taxes), million SEK this year
+[X62] : Sales to foreign subsidiaries (excluding indirect taxes), million SEK next year (plan)
+[X63] : R&D costs, million SEK last year
+[X64] : R&D costs, million SEK this year
+[X65] : R&D costs, million SEK next year (plan)

@@ -1,0 +1,14 @@
+macrodatabase.csv holds aggregated data from the manufacturing industry in planning survey industries (MOSES industries).
+The data is taken from Statistics Sweden (SCB).
+All values are current
+
+===== Variables =====
+industry: the planning survey industry (S: intermediary good, K: Consumption good, V: Investment good, R: Raw materials good, B: Building materials good)
+year: the year the data refers to
+sales: sales (taken as production in basic price) (million SEK)
+import_cost: import cost (taken as intermediary goods consumption in purchaser's price) (million SEK)
+wage_sum: wage sum (million SEK)
+value_added: value added (taken as value added in basic price) (million SEK)
+employees: average number of employees (thousands)
+manhours: worked hours (manhours) (millions)
+gross_investment: gross investments (taken as gross fixed capital formation) (million SEK)
