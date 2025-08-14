@@ -42,7 +42,7 @@ interpolate_division <- function(df) {
       df[, col] <- approx(df$year[valid_idx], df[, col][valid_idx], 
                          xout = df$year, rule = 2)$y
       
-      # Or use spline instead (comment out approx line above):
+      # Or use spline instead:
       # df[, col] <- spline(df$year[valid_idx], df[, col][valid_idx], 
       #                    xout = df$year)$y
     }
