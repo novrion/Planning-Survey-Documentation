@@ -16,8 +16,8 @@ void draw_one_firm_develops(Database db) {
     for (const Firm &firm : firms) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
-          const double y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.id == CASE_ID});
           break;
         }
@@ -47,8 +47,8 @@ void draw_productivity_distrs(Database db) {
     for (const Firm &firm : firms) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
-          const double y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -82,8 +82,8 @@ void draw_productivity_distrs_per_industry(Database db, const int year) {
 
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
-          const double y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -114,8 +114,8 @@ void draw_productivity_distrs_no_selection(Database db) {
     for (const Firm &firm : firms) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
-          const double y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -148,8 +148,8 @@ void draw_productivity_distrs_no_selection_interpolated(Database db) {
     for (const Firm &firm : firms) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
-          const double y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -184,7 +184,7 @@ void draw_wage_cost_distrs(Database db) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
           const double y = 1e-6 * (ob.wage_sum) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -215,7 +215,7 @@ void draw_wage_cost_distrs_per_industry(Database db, const int year) {
       for (const Firm::Observation &ob : firm.obs) {
         if (ob.year == year) {
           const double y = 1e-6 * (ob.wage_sum) / ob.employees;
-          const double x = ob.sales - ob.import_cost;
+          const double x = ob.sales - ob.input_cost;
           points.push_back({x, y, firm.is_synthetic});
           break;
         }
@@ -245,9 +245,9 @@ to_aligned_prod_wage_series(const std::vector<Firm> &firms,
       if (ob.year != years[year_idx])
         continue;
 
-      const double prod_y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
+      const double prod_y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
       const double wage_y = 1e-6 * ob.wage_sum / ob.employees;
-      const double x = ob.sales - ob.import_cost;
+      const double x = ob.sales - ob.input_cost;
 
       prod_points.push_back(Graph::Point(x, prod_y, firm.is_synthetic));
       wage_points.push_back(Graph::Point(x, wage_y, firm.is_synthetic));
@@ -320,9 +320,9 @@ to_aligned_prod_wage_series_per_industry(const std::vector<Firm> &firms,
       if (ob.year != years[year_idx])
         continue;
 
-      const double prod_y = 1e-6 * (ob.sales - ob.import_cost) / ob.employees;
+      const double prod_y = 1e-6 * (ob.sales - ob.input_cost) / ob.employees;
       const double wage_y = 1e-6 * ob.wage_sum / ob.employees;
-      const double x = ob.sales - ob.import_cost;
+      const double x = ob.sales - ob.input_cost;
 
       prod_points.push_back(Graph::Point(x, prod_y, firm.is_synthetic));
       wage_points.push_back(Graph::Point(x, wage_y, firm.is_synthetic));

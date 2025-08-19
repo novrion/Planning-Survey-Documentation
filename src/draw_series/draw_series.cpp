@@ -30,7 +30,7 @@ void draw_series(Database db) {
           continue;
 
         sum_s += ob.sales;
-        sum_va += ob.sales - ob.import_cost;
+        sum_va += ob.sales - ob.input_cost;
         sum_l += ob.employees;
       }
     }
@@ -39,7 +39,7 @@ void draw_series(Database db) {
     for (const Firm::Observation &ob : residual_firm.obs) {
       if (ob.year == year) {
         res_s += ob.sales;
-        res_va = ob.sales - ob.import_cost;
+        res_va = ob.sales - ob.input_cost;
         res_l = ob.employees;
         break;
       }

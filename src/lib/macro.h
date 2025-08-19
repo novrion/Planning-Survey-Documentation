@@ -11,7 +11,7 @@ class MacroData {
 public:
   struct Observation {
     int year, mkt_id;
-    double sales, import_cost, wage, wage_sum, value_added, employees, manhours,
+    double sales, input_cost, wage, wage_sum, value_added, employees, manhours,
         gross_investments;
 
     static Observation parse_tokens(const std::vector<std::string> &tokens);

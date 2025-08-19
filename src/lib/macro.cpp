@@ -22,7 +22,7 @@ MacroData::Observation::parse_tokens(const std::vector<std::string> &tokens) {
       ob.sales = (token == EMPTY ? EMPTY_NUM : 1e6 * std::stod(token));
       break;
     case 3:
-      ob.import_cost = (token == EMPTY ? EMPTY_NUM : 1e6 * std::stod(token));
+      ob.input_cost = (token == EMPTY ? EMPTY_NUM : 1e6 * std::stod(token));
       break;
     case 4:
       ob.wage_sum = (token == EMPTY ? EMPTY_NUM : 1e6 * std::stod(token));

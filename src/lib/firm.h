@@ -16,7 +16,7 @@ class Firm {
 public:
   struct Observation {
     int year;
-    double employees, sales, import_cost, wage_sum, wage;
+    double employees, sales, input_cost, wage_sum, wage;
   };
 
   int id;

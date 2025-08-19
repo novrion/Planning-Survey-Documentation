@@ -43,7 +43,7 @@ void draw_coverage(Database &db, int var) {
         if (var == LABOR)
           sum += ob.employees;
         else if (var == VALUEADDED)
-          sum += ob.sales - ob.import_cost;
+          sum += ob.sales - ob.input_cost;
       }
     }
 
@@ -54,7 +54,7 @@ void draw_coverage(Database &db, int var) {
         if (var == LABOR)
           macro = ob.employees;
         else if (var == VALUEADDED)
-          macro = ob.sales - ob.import_cost;
+          macro = ob.sales - ob.input_cost;
 
         break;
       }

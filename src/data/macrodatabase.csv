@@ -1,4 +1,4 @@
-﻿industry,year,sales,import_cost,wage_sum,value_added,employees,manhours,gross_investment
+﻿industry,year,sales,input_cost,wage_sum,value_added,employees,manhours,gross_investment
 S,1980,83579,55184,13425,28395,180.9,300,
 S,1981,82569,54404,14484,28165,174.5,293,
 S,1982,97660,66884,15021,30776,176.8,284,

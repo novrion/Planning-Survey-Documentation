@@ -32,7 +32,7 @@ Firm::Firm(const Division &div, const std::vector<int> &years,
 
     double employees = div_ob.vars[1];
     double sales = 1e6 * (div_ob.vars[7] + div_ob.vars[10]);
-    double import_cost =
+    double input_cost =
         1e6 * (div_ob.vars[16] + div_ob.vars[19] + div_ob.vars[22]);
     double wage_sum = 1e6 * div_ob.vars[25];
     double wage = wage_sum / employees;
@@ -44,7 +44,7 @@ Firm::Firm(const Division &div, const std::vector<int> &years,
                                " year: " + std::to_string(div_ob.year) + ")");
     }
 
-    obs.push_back({year, employees, sales, import_cost, wage_sum, wage});
+    obs.push_back({year, employees, sales, input_cost, wage_sum, wage});
   }
 }
 
@@ -68,7 +68,7 @@ Firm::Firm(const std::vector<Firm> &firms, const MacroData &macrodata,
     } else {
       it->second.employees += mac_ob.employees;
       it->second.sales += mac_ob.sales;
-      it->second.import_cost += mac_ob.import_cost;
+      it->second.input_cost += mac_ob.input_cost;
       it->second.wage_sum += mac_ob.wage_sum;
     }
   }
@@ -77,17 +77,17 @@ Firm::Firm(const std::vector<Firm> &firms, const MacroData &macrodata,
   for (const auto &[year, mac_ob] : macro_by_year) {
     double employees = mac_ob.employees - aggregate(firms, year, "employees");
     double sales = mac_ob.sales - aggregate(firms, year, "sales");
-    double import_cost =
-        mac_ob.import_cost - aggregate(firms, year, "import_cost");
+    double input_cost =
+        mac_ob.input_cost - aggregate(firms, year, "input_cost");
     double wage_sum = mac_ob.wage_sum - aggregate(firms, year, "wage_sum");
     double wage = wage_sum / employees;
 
-    if (employees <= 0 || sales <= 0 || import_cost <= 0 || wage_sum <= 0)
+    if (employees <= 0 || sales <= 0 || input_cost <= 0 || wage_sum <= 0)
       throw std::runtime_error(
           "ERROR: Invalid value in synthetic residual firm for year " +
           std::to_string(year));
 
-    obs.push_back({year, employees, sales, import_cost, wage_sum, wage});
+    obs.push_back({year, employees, sales, input_cost, wage_sum, wage});
   }
 
   if (obs.empty())
@@ -114,19 +114,19 @@ Firm::Firm(const std::vector<Firm> &firms, const MacroData &macrodata,
     double employees =
         mac_ob.employees - aggregate(firms, year, "employees", mkt_id);
     double sales = mac_ob.sales - aggregate(firms, year, "sales", mkt_id);
-    double import_cost =
-        mac_ob.import_cost - aggregate(firms, year, "import_cost", mkt_id);
+    double input_cost =
+        mac_ob.input_cost - aggregate(firms, year, "input_cost", mkt_id);
     double wage_sum =
         mac_ob.wage_sum - aggregate(firms, year, "wage_sum", mkt_id);
     double wage = wage_sum / employees;
 
-    if (employees <= 0 || sales <= 0 || import_cost <= 0 || wage_sum <= 0)
+    if (employees <= 0 || sales <= 0 || input_cost <= 0 || wage_sum <= 0)
       throw std::runtime_error("ERROR: Invalid value in initialisation of "
                                "synthetic residual firm (mkt_id: " +
                                std::to_string(_mkt_id) +
                                " year: " + std::to_string(mac_ob.year) + ")");
 
-    obs.push_back({year, employees, sales, import_cost, wage_sum, wage});
+    obs.push_back({year, employees, sales, input_cost, wage_sum, wage});
   }
 
   if (obs.empty())
@@ -156,8 +156,8 @@ double Firm::aggregate(const std::vector<Firm> &firms, const int year,
         ret += ob.employees;
       else if (var_name == "sales")
         ret += ob.sales;
-      else if (var_name == "import_cost")
-        ret += ob.import_cost;
+      else if (var_name == "input_cost")
+        ret += ob.input_cost;
       else if (var_name == "wage_sum")
         ret += ob.wage_sum;
       else
